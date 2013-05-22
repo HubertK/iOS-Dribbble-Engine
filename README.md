@@ -51,14 +51,9 @@ Here is a list of all the DribbbleEngineDelegate Methods:
 
 Dribbble gives us three different kinds of shots we can GET, Popular, Debuts or Everyone.
 The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryone, kShotTypePopular
+<h5>Each method returns and NSArray of "Shot" objects
 
-````
-   //====================================================================
-    //             Shot Methods --  Returns an Array of Shot Objects
-    //====================================================================
-
-    //Returns the specified list of shots where :list has one of the following values: kShotTypeDebuts, kShotTypeEveryone, kShotTypePopular (Supports Pagination)
-    //For situations where you want all shots of all types or more than one page of shots, you can use the completion block to know when you can start downloading the next set of shots without causing an error or memory warning.
+```` 
 - (void)getShotsForType:(ShotTypes)type page:(NSInteger)page;
 - (void)getShotsForType:(ShotTypes)type page:(NSInteger)page complete:(CompletionBlock)finished;
 
@@ -74,24 +69,24 @@ The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryon
     // Returns details for a shot specified by :id.
 - (void)getDetailsForShot:(NSString*)shotID;
 
+````
 
 
 
 
-    //====================================================================
-    //           Coment Methods -- Returns an Array of Comment Objects
-    //====================================================================
 
-    //Returns the set of comments for the shot specified by :id.
+<h5> Comment Methos, Returns an NSArray of "Comment" objects
+````
 - (void)getCommentsForShot:(Shot*)shot;
 
+````
 
 
 
 
-    //====================================================================
-    //             Player Methods -- Returns an Array of Player Objects
-    //====================================================================
+
+ Player Methods -- Returns an NSArray of Player Objects
+````
 
     //Returns the list of followers for a player specified by :id.
 - (void)getFollowersForPlayer:(NSString*)playerID;
