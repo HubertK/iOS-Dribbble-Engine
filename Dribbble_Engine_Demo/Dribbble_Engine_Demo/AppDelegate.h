@@ -1,7 +1,8 @@
 //
 //  AppDelegate.h
-//  Dribble_Engine
+//  Dribbble_Engine_Demo
 //
+//  Created by Hubert Kunnemeyer on 5/21/13.
 //  Copyright (c) 2013 Hubert Kunnemeyer. All rights reserved.
 //
 

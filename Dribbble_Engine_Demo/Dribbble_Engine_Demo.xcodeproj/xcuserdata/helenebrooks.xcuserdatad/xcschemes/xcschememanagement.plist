@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Dribble_Engine.xcscheme</key>
+		<key>Dribbble_Engine_Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>577FC605174C2ED50085BCF3</key>
+		<key>579B0FEA174C73F90091A8DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

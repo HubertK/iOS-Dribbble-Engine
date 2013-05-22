@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Dribble_Engine
+//  Dribbble_Engine_Demo
 //
-//  Created by Helene Brooks on 5/21/13.
+//  Created by Hubert Kunnemeyer on 5/21/13.
 //  Copyright (c) 2013 Hubert Kunnemeyer. All rights reserved.
 //
 

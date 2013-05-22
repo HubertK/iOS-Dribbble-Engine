@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "577FC605174C2ED50085BCF3"
-               BuildableName = "Dribble_Engine.app"
-               BlueprintName = "Dribble_Engine"
-               ReferencedContainer = "container:Dribble_Engine.xcodeproj">
+               BlueprintIdentifier = "579B0FEA174C73F90091A8DD"
+               BuildableName = "Dribbble_Engine_Demo.app"
+               BlueprintName = "Dribbble_Engine_Demo"
+               ReferencedContainer = "container:Dribbble_Engine_Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "577FC605174C2ED50085BCF3"
-            BuildableName = "Dribble_Engine.app"
-            BlueprintName = "Dribble_Engine"
-            ReferencedContainer = "container:Dribble_Engine.xcodeproj">
+            BlueprintIdentifier = "579B0FEA174C73F90091A8DD"
+            BuildableName = "Dribbble_Engine_Demo.app"
+            BlueprintName = "Dribbble_Engine_Demo"
+            ReferencedContainer = "container:Dribbble_Engine_Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "577FC605174C2ED50085BCF3"
-            BuildableName = "Dribble_Engine.app"
-            BlueprintName = "Dribble_Engine"
-            ReferencedContainer = "container:Dribble_Engine.xcodeproj">
+            BlueprintIdentifier = "579B0FEA174C73F90091A8DD"
+            BuildableName = "Dribbble_Engine_Demo.app"
+            BlueprintName = "Dribbble_Engine_Demo"
+            ReferencedContainer = "container:Dribbble_Engine_Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "577FC605174C2ED50085BCF3"
-            BuildableName = "Dribble_Engine.app"
-            BlueprintName = "Dribble_Engine"
-            ReferencedContainer = "container:Dribble_Engine.xcodeproj">
+            BlueprintIdentifier = "579B0FEA174C73F90091A8DD"
+            BuildableName = "Dribbble_Engine_Demo.app"
+            BlueprintName = "Dribbble_Engine_Demo"
+            ReferencedContainer = "container:Dribbble_Engine_Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

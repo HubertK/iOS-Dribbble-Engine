@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Dribble_Engine.xcodeproj">
+      location = "self:Dribbble_Engine_Demo.xcodeproj">
    </FileRef>
 </Workspace>
