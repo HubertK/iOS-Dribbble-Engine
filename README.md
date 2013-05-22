@@ -75,7 +75,7 @@ The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryon
 
 
 
-<h5> Comment Methos, Returns an NSArray of "Comment" objects
+<h5> Comment Methosd, Returns an NSArray of "Comment" objects
 ````
 - (void)getCommentsForShot:(Shot*)shot;
 
@@ -85,16 +85,16 @@ The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryon
 
 
 
- Player Methods -- Returns an NSArray of Player Objects
+<h5> Player Methods -- Returns an NSArray of Player Objects
 ````
 
-    //Returns the list of followers for a player specified by :id.
+    //Returns the list of followers for a player specified by playerID.
 - (void)getFollowersForPlayer:(NSString*)playerID;
 
-    //Returns the list of players followed by the player specified by :id.
+    //Returns the list of players followed by the player specified by playerID.
 - (void)getPlayersFollowingPlayer:(NSString*)playerID;
 
-    //Returns the list of players drafted by the player specified by :id.
+    //Returns the list of players drafted by the player specified by playerID.
 - (void)getPlayersDraftedByPlayer:(NSString*)playerID;
 
     // Returns a single Player Object
