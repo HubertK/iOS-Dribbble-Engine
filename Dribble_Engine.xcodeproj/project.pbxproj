@@ -17,11 +17,7 @@
 		577FC61E174C2ED50085BCF3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 577FC61D174C2ED50085BCF3 /* Default@2x.png */; };
 		577FC620174C2ED50085BCF3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 577FC61F174C2ED50085BCF3 /* Default-568h@2x.png */; };
 		577FC623174C2ED50085BCF3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577FC621174C2ED50085BCF3 /* MainStoryboard.storyboard */; };
-		577FC635174C2EE80085BCF3 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC62F174C2EE80085BCF3 /* Player.m */; };
-		577FC636174C2EE80085BCF3 /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC631174C2EE80085BCF3 /* Shot.m */; };
 		577FC63A174C2F090085BCF3 /* HKConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC639174C2F090085BCF3 /* HKConnection.m */; };
-		577FC63D174C2FB50085BCF3 /* DribbbleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC63C174C2FB40085BCF3 /* DribbbleEngine.m */; };
-		577FC640174C31940085BCF3 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC63F174C31940085BCF3 /* Comment.m */; };
 		577FC643174C354D0085BCF3 /* DribbbleShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC642174C354D0085BCF3 /* DribbbleShotsViewController.m */; };
 		577FC65F174C372D0085BCF3 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC648174C372D0085BCF3 /* NSData+GIF.m */; };
 		577FC660174C372D0085BCF3 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 577FC64A174C372D0085BCF3 /* SDImageCache.m */; };
@@ -38,6 +34,10 @@
 		579B0FCA174C39610091A8DD /* ShotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579B0FC9174C39610091A8DD /* ShotCell.m */; };
 		579B0FCD174C3A380091A8DD /* dribbble-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 579B0FCB174C3A380091A8DD /* dribbble-icon.png */; };
 		579B0FCE174C3A380091A8DD /* dribbble-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579B0FCC174C3A380091A8DD /* dribbble-icon@2x.png */; };
+		579B0FDE174C70A00091A8DD /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 579B0FD7174C70A00091A8DD /* Comment.m */; };
+		579B0FDF174C70A00091A8DD /* DribbbleEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 579B0FD9174C70A00091A8DD /* DribbbleEngine.m */; };
+		579B0FE0174C70A00091A8DD /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 579B0FDB174C70A00091A8DD /* Shot.m */; };
+		579B0FE1174C70A00091A8DD /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 579B0FDD174C70A00091A8DD /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,16 +55,8 @@
 		577FC61D174C2ED50085BCF3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		577FC61F174C2ED50085BCF3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		577FC622174C2ED50085BCF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		577FC62E174C2EE80085BCF3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		577FC62F174C2EE80085BCF3 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		577FC630174C2EE80085BCF3 /* Shot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
-		577FC631174C2EE80085BCF3 /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
 		577FC638174C2F090085BCF3 /* HKConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKConnection.h; sourceTree = "<group>"; };
 		577FC639174C2F090085BCF3 /* HKConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKConnection.m; sourceTree = "<group>"; };
-		577FC63B174C2FB40085BCF3 /* DribbbleEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DribbbleEngine.h; sourceTree = "<group>"; };
-		577FC63C174C2FB40085BCF3 /* DribbbleEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DribbbleEngine.m; sourceTree = "<group>"; };
-		577FC63E174C31940085BCF3 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
-		577FC63F174C31940085BCF3 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		577FC641174C354C0085BCF3 /* DribbbleShotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DribbbleShotsViewController.h; sourceTree = "<group>"; };
 		577FC642174C354D0085BCF3 /* DribbbleShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DribbbleShotsViewController.m; sourceTree = "<group>"; };
 		577FC647174C372D0085BCF3 /* NSData+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GIF.h"; sourceTree = "<group>"; };
@@ -95,6 +87,14 @@
 		579B0FC9174C39610091A8DD /* ShotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotCell.m; sourceTree = "<group>"; };
 		579B0FCB174C3A380091A8DD /* dribbble-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dribbble-icon.png"; sourceTree = "<group>"; };
 		579B0FCC174C3A380091A8DD /* dribbble-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dribbble-icon@2x.png"; sourceTree = "<group>"; };
+		579B0FD6174C70A00091A8DD /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = "Dribbble Engine/Comment.h"; sourceTree = "<group>"; };
+		579B0FD7174C70A00091A8DD /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = "Dribbble Engine/Comment.m"; sourceTree = "<group>"; };
+		579B0FD8174C70A00091A8DD /* DribbbleEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DribbbleEngine.h; path = "Dribbble Engine/DribbbleEngine.h"; sourceTree = "<group>"; };
+		579B0FD9174C70A00091A8DD /* DribbbleEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DribbbleEngine.m; path = "Dribbble Engine/DribbbleEngine.m"; sourceTree = "<group>"; };
+		579B0FDA174C70A00091A8DD /* Shot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shot.h; path = "Dribbble Engine/Shot.h"; sourceTree = "<group>"; };
+		579B0FDB174C70A00091A8DD /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shot.m; path = "Dribbble Engine/Shot.m"; sourceTree = "<group>"; };
+		579B0FDC174C70A00091A8DD /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = "Dribbble Engine/Player.h"; sourceTree = "<group>"; };
+		579B0FDD174C70A00091A8DD /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = "Dribbble Engine/Player.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,14 +208,14 @@
 		579B0FCF174C65A80091A8DD /* Dribbble Engine */ = {
 			isa = PBXGroup;
 			children = (
-				577FC63B174C2FB40085BCF3 /* DribbbleEngine.h */,
-				577FC63C174C2FB40085BCF3 /* DribbbleEngine.m */,
-				577FC62E174C2EE80085BCF3 /* Player.h */,
-				577FC62F174C2EE80085BCF3 /* Player.m */,
-				577FC630174C2EE80085BCF3 /* Shot.h */,
-				577FC631174C2EE80085BCF3 /* Shot.m */,
-				577FC63E174C31940085BCF3 /* Comment.h */,
-				577FC63F174C31940085BCF3 /* Comment.m */,
+				579B0FD6174C70A00091A8DD /* Comment.h */,
+				579B0FD7174C70A00091A8DD /* Comment.m */,
+				579B0FD8174C70A00091A8DD /* DribbbleEngine.h */,
+				579B0FD9174C70A00091A8DD /* DribbbleEngine.m */,
+				579B0FDA174C70A00091A8DD /* Shot.h */,
+				579B0FDB174C70A00091A8DD /* Shot.m */,
+				579B0FDC174C70A00091A8DD /* Player.h */,
+				579B0FDD174C70A00091A8DD /* Player.m */,
 			);
 			name = "Dribbble Engine";
 			sourceTree = "<group>";
@@ -290,11 +290,7 @@
 			files = (
 				577FC616174C2ED50085BCF3 /* main.m in Sources */,
 				577FC61A174C2ED50085BCF3 /* AppDelegate.m in Sources */,
-				577FC635174C2EE80085BCF3 /* Player.m in Sources */,
-				577FC636174C2EE80085BCF3 /* Shot.m in Sources */,
 				577FC63A174C2F090085BCF3 /* HKConnection.m in Sources */,
-				577FC63D174C2FB50085BCF3 /* DribbbleEngine.m in Sources */,
-				577FC640174C31940085BCF3 /* Comment.m in Sources */,
 				577FC643174C354D0085BCF3 /* DribbbleShotsViewController.m in Sources */,
 				577FC65F174C372D0085BCF3 /* NSData+GIF.m in Sources */,
 				577FC660174C372D0085BCF3 /* SDImageCache.m in Sources */,
@@ -308,6 +304,10 @@
 				577FC668174C372D0085BCF3 /* UIImage+GIF.m in Sources */,
 				577FC669174C372D0085BCF3 /* UIImageView+WebCache.m in Sources */,
 				579B0FCA174C39610091A8DD /* ShotCell.m in Sources */,
+				579B0FDE174C70A00091A8DD /* Comment.m in Sources */,
+				579B0FDF174C70A00091A8DD /* DribbbleEngine.m in Sources */,
+				579B0FE0174C70A00091A8DD /* Shot.m in Sources */,
+				579B0FE1174C70A00091A8DD /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
