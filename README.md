@@ -75,7 +75,7 @@ The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryon
 
 
 
-<h5> Comment Methosd, Returns an NSArray of "Comment" objects
+<h5> Comment Method, Returns an NSArray of "Comment" objects
 ````
 - (void)getCommentsForShot:(Shot*)shot;
 
