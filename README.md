@@ -16,7 +16,7 @@ The actual Dribbble Engine has only four classes:
 
 
 All results are returned via the DribbbleEngineDelegate. The delegate has many optional methods depending on your query.
-Here is a list of all the DribbbleEngineDelegate Methods:
+<h5>The DribbbleEngineDelegate Methods:
 ````
     //Shots
 - (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShots:(NSArray*)shots ofType:(ShotTypes)shotType;
@@ -49,7 +49,7 @@ Here is a list of all the DribbbleEngineDelegate Methods:
 
 <H3>Now lets have a look at how we query for Shots, Players and Comments
 
-Dribbble gives us three different kinds of shots we can GET, Popular, Debuts or Everyone.
+Dribbble gives us three different kinds of shots we can GET: Popular, Debuts or Everyone.
 The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryone, kShotTypePopular
 <h5>Each method returns and NSArray of "Shot" objects
 
