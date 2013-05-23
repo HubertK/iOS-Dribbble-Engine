@@ -7,50 +7,24 @@ Keep in mind that the Dribbble API is still in Beta. And this is still very much
 
 I love to browse the Dribbble website so I decided it was time to make an un-official dribble engine for iOS. The API doesnt support anything other than GET calls at this time, but it's enough to get us started.
 
-The actual Dribbble Engine has only four classes:
+The actual Dribbble Engine has only four classes, they are:
 
-1. DribbbleEngine - is the work-horse. It's used to 'GET' Shots, Players, and Comments.
-2. Shot
-3. Player
-4. Comment
-
-
-All results are returned via the DribbbleEngineDelegate. The delegate has many optional methods depending on your query.
-<h5>The DribbbleEngineDelegate Methods:
-````
-    //Shots
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShots:(NSArray*)shots ofType:(ShotTypes)shotType;
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShotDetails:(Shot*)shot;
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringRebounds:(NSArray*)rebounds;
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringPlayersShots:(NSArray*)shots forPlayerID:(NSString*)playerID page:(NSInteger)page;
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShotsForPlayersFollowingPlayer:(NSArray*)shots forPlayerID:(NSString*)playerID page:(NSInteger)page;
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShotsThatPlayerLikes:(NSArray*)shots forPlayerID:(NSString*)playerID page:(NSInteger)page;
+ *   DribbbleEngine
+ *   Shot
+ *   Player
+ *   Comment
+ 
 
 
-    //Players
-- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringPlayersID:(Player*)player;
-- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringPlayersFollowers:(NSArray*)followers forPlayerID:(NSString*)playerID;
-- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringPlayersFollowingPlayer:(NSArray*)PlayersFollowing forPlayerID:(NSString*)playerID;
-- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringDraftees:(NSArray*)draftees byPlayer:(NSString*)playerID;
-
-
-    //Comments
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringComments:(NSArray*)comments;
-
-
-    // If pagination is supported by the method, this method is invoked to give access to the pagination parameters
-- (void)dribbbleEngine:(DribbbleEngine *)engine didSendPage:(NSInteger)pageSent of:(NSInteger)totalPages;
-
-
-    //Called for any Errors encountered
-- (void)dribbbleEngine:(DribbbleEngine*)engine didFailWithError:(NSError*)error;
-
-````
-
-<H3>Now lets have a look at how we query for Shots, Players and Comments
-
+<h3>Now lets have a look at how we query for Shots, Players and Comments.</h3>
 Dribbble gives us three different kinds of shots we can GET: Popular, Debuts or Everyone.
-The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryone, kShotTypePopular
+The Engine has three corresponding "ShotTypes" that can be passed to the  getShotsForType:page: method. The values are as follows:
+
+1. kShotTypePopular = Popular
+2. kShotTypeDebut = Debuts
+3. kShotTypeEveryone = Everyone
+
+
 <h5>Each method returns and NSArray of "Shot" objects
 
 ```` 
@@ -101,3 +75,88 @@ The Engine has three corresponding "ShotTypes" kShotTypeDebuts, kShotTypeEveryon
 - (void)getPlayerProfile:(NSString*)playerID;
 
 ````
+
+* * *
+All results are returned via the DribbbleEngineDelegate. All the delegate methods are optional. It depends on your query which ones you'll want to use. 
+<h3>DribbbleEngineDelegate methods</h3>
+````
+    //Shots
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShots:(NSArray*)shots ofType:(ShotTypes)shotType;
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShotDetails:(Shot*)shot;
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringRebounds:(NSArray*)rebounds;
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringPlayersShots:(NSArray*)shots forPlayerID:(NSString*)playerID page:(NSInteger)page;
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShotsForPlayersFollowingPlayer:(NSArray*)shots forPlayerID:(NSString*)playerID page:(NSInteger)page;
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringShotsThatPlayerLikes:(NSArray*)shots forPlayerID:(NSString*)playerID page:(NSInteger)page;
+
+
+    //Players
+- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringPlayersID:(Player*)player;
+- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringPlayersFollowers:(NSArray*)followers forPlayerID:(NSString*)playerID;
+- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringPlayersFollowingPlayer:(NSArray*)PlayersFollowing forPlayerID:(NSString*)playerID;
+- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringDraftees:(NSArray*)draftees byPlayer:(NSString*)playerID;
+
+
+    //Comments
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFinishGatheringComments:(NSArray*)comments;
+
+
+    // If pagination is supported by the method, this method is invoked to give access to the pagination parameters
+- (void)dribbbleEngine:(DribbbleEngine *)engine didSendPage:(NSInteger)pageSent of:(NSInteger)totalPages;
+
+
+    //Called for any Errors encountered
+- (void)dribbbleEngine:(DribbbleEngine*)engine didFailWithError:(NSError*)error;
+
+````
+<h3>Installation</h3>
+Just drag all of the files from the "DribbbleEngine" folder into your project. The only files you need are:
+
+1. DribbbleEngine.h, DribbbleEngine.m
+2. Shot.h, Shot.m
+3. Player.h, Player.m
+4. Comment.h, Comment.m
+5. 
+That's it for the installation.
+
+* * * *
+<h3>Example</h3>
+Lets say you wanted to get a list of todays most popular shots. First thing youd have to do is import DribbbleEngine.h and make sure your controller conforms to the DribbbleEngine protocol. Like so:
+<h5>
+````
+#import <UIKit/UIKit.h>
+#import "DribbbleEngine.h"
+
+@interface ViewController : UITableViewController<DribbbleEngineDelegate>
+
+@end
+````
+The next thing we gotta do is create an instance of DribbbleEngine, set ourself as it's delegate, and query for one of the three different *ShotTypes*, in this case we're after the popular shots :
+````
+    DribbbleEngine *dribbbleEngine = [[DribbbleEngine alloc]init];
+    dribbbleEngine.delegate = self;
+
+    [dribbbleEngine getShotsForType:kShotTypePopular page:0];
+
+````
+When the DribbbleEngine is done one of two delegate methods will be invoked. If your interested in using pagination, a third method will be invoked with that info also:
+````
+- (void)dribbbleEngine:(DribbbleEngine *)engine didFailWithError:(NSError *)error{
+    NSLog("Whoops an Error occured during our query!");
+}
+
+- (void)dribbbleEngine:(DribbbleEngine *)engine didFinishGatheringShots:(NSArray *)shots ofType:(ShotTypes)shotType{
+    NSLog(@"Hurray we got back a list of Shot objects:%@",shots);
+}
+
+- (void)dribbbleEngine:(DribbbleEngine *)engine didSendPage:(NSInteger)pageSent of:(NSInteger)totalPages{
+        NSLog(@"Displaying page %d of %d",pageSent,totalPages);
+}
+````
+Each Shot Object has quite a bit of information such as it's ID, title, image URL's, Player, and much more. 
+Have a look at Shot.h, Player.h, and Comment.h for all of the available variables.
+
+Please have a look at the demo project to get an idea of how things work. And have a little fun! 
+
+The demo included uses [Olivier Poitrey's](https://github.com/rs) extraordinarily useful [SDWebImage](https://github.com/rs/SDWebImage) library for image downloading and caching.
+
+
